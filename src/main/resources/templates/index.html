@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="pl" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>Global EXPO: Boris Brejcha</title>
+    <meta name="description" content="Global EXPO: Boris Brejcha"/>
+    <meta name="keywords" content="Boris Brejcha, global expo, high-tech"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <style>
+    body
+    {
+     background-image: url('boris4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+    #container
+	{
+    width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		font-family: 'Lato', sans-serif;
+    }
+	#logo
+	{
+		background-color: black;
+		color: white;
+		text-align: center;
+		padding: 5px;
+		font-size: 15px;
+	}
+	#nav
+	{
+	    color: lightgray;
+		float: left;
+		background-color: black;
+		width: 600px;
+		min-height: 450px;
+		padding: 0px;
+	}
+	#content
+	{
+	    color: #AFEEEE;
+		float: left;
+		padding: 20px;
+		width: 320px;
+	}
+	#ad
+	{
+		float: left;
+		width: 0px;
+		min-height: 450px;
+		padding: 0px;
+		background-color: lightgray;
+	}
+	#footer
+	{
+		clear: both;
+		background-color: black;
+		color: white;
+		text-align: center;
+		padding: 20px;
+	}
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="logo">
+        <h1>Global EXPO: Boris Brejcha</h1>
+    </div>
+    <div id="nav">
+        <center>
+            <h4>
+                Już niedługo wydarzy się coś na co czekał każdy polski fan gatunku High-Tech Minimal.
+                13 lutego 2020 w Global EXPO w Warszawie odbędzie się wyjątkowy koncert,
+                podczas którego swoje sety zaprezentuje niekwestionowany król tego gatunku muzycznego
+                Boris Brejcha! Ten niemiecki Dj i producent muzyczny ma na swoim koncie już 9 płyt,
+                w tym 4 z nich to albumy a 5 to kompilacje. Po fantastycznym widowisku,
+                które zafundował swoim fanom w dawnej Fabryce Samochodów Osobowych FSO
+                w Warszawie Boris znowu zrobi hałas w stolicy! Specjalnie na tę noc,
+                dla tego artysty i jego wiernych fanów hala zmieni swój wygląd nie do poznania.
+                To już trzeci raz, kiedy artysta postanowił odwiedzić nasz piękny kraj.
+                Poprzednie koncerty udowodniły, że polska publiczność go kocha a jego energetyczne
+                brzmienia porwą do zabawy nawet największego mruka. Dlatego nie może zabraknąć Cię z nami!
+                Przed Borisem zapraszamy na równie genialny suport, którym będzie Ann Clue!
+            </h4>
+            <h2>Dzisiejsza data: <a th:text="${todaysDate}"/></h2>
+            <h2><a th:text="${timeLeft}"/></h2>
+            <a href="/">Oblicz ponownie</a>
+        </center>
+    </div>
+    <div id="content">
+
+    </div>
+    <div id="ad">
+        <br>
+    </div>
+    <div id="footer">
+        RS Java Solutions - All rights reserved
+    </div>
+</div>
+</body>
+</html>
