@@ -18,7 +18,7 @@ public class ExpoService {
     }
 
     public String getTodaysDate() {
-        return getDate(LocalDateTime.now());
+        return getDate(LocalDateTime.now().plusHours(2));
     }
 
     public String getExpoDate() {
