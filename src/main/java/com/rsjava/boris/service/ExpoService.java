@@ -4,6 +4,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
 @Service
@@ -18,7 +19,7 @@ public class ExpoService {
     }
 
     public String getTodaysDate() {
-        return getDate(LocalDateTime.now().plusHours(2));
+        return getDate(LocalDateTime.now(ZoneId.of("Europe/Berlin")));
     }
 
     public String getExpoDate() {
